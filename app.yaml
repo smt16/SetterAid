@@ -1,0 +1,19 @@
+runtime: python
+
+runtime_config:
+    operating_system: "ubuntu22"
+    runtime_version: "3.11"
+
+env: flex
+
+resources:
+  cpu: 4
+  memory_gb: 16
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5
+
+# env_variables:
+#   MY_VAR: "my value"
